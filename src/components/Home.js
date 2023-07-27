@@ -70,8 +70,8 @@ const Home = () => {
                                     {
                                         (filteredRestaurants === null ? filteredRes : filteredRestaurants).map((restaurant) => {
                                             return (
-                                                <Link to={`/resturant/${restaurant?.data.id}`} >
-                                                    <Menu  {...restaurant.data} />
+                                                <Link to={`/resturant/${restaurant?.info?.id}`} >
+                                                    <Menu  {...restaurant?.info} />
                                                 </Link>
                                             )
                                         })
