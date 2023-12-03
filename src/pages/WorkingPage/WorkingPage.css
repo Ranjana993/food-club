@@ -6,8 +6,8 @@
 
 .wrapper-work>h1 {
     font-size: 3rem;
-    font-weight: 400;
-    color: orangered;
+    font-weight: 600;
+    color: #7743DB;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -43,7 +43,7 @@
 .container-wrapper>.working_cards>button {
     margin: auto;
     /* padding: 1rem; */
-    background-color: rgb(255, 69, 0);
+    background-color: #7743DB;
     color: white;
     font-weight: 700;
     font-size: 1rem;

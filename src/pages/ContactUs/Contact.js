@@ -1,15 +1,15 @@
 import React from 'react'
 import "./Contact.css"
-const contactUs = "/img/contact-us.jpg"
+const contactUs = "/img/contactus.gif"
 
 
 const Contact = () => {
     return (
         <>
             <div className="container_contact">
-                <div className="contact_img">
+                {/* <div className="contact_img">
                     <img src={contactUs} alt="" />
-                </div>
+                </div> */}
                 <div className="info_contact_us">
                 <h2>Contact Us </h2>
                     <form>

@@ -4,7 +4,7 @@
     justify-content: center;
     margin: auto;
     text-align: center;
-    background: linear-gradient(rgb(242, 205, 205) , hwb(351 69% 4%));
+    background: linear-gradient(#eadff4 , #daccf3);
     padding: 2%;
 }
 .payment_img,

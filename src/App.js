@@ -4,9 +4,9 @@ import Header from './pages/Header/Header';
 import Home from './components/Home';
 import AboutUs from './pages/AboutUs/AboutUs';
 import Contact from './pages/ContactUs/Contact';
-import Login from './pages/Login/Login';
 import DetailPage from './pages/DetailPage/DetailPage';
 import Footer from './pages/Footer/Footer';
+import Services from './pages/Services/Services';
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<AboutUs />} />
         <Route path='/contact' element={<Contact />} />
-        <Route path='/login' element={<Login />} />
+        <Route path='/services' element={<Services />} />
         <Route path="/resturant/:id" element={<DetailPage />} />
         
       </Routes>

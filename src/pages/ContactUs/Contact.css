@@ -24,7 +24,8 @@
     font-size: 2.5rem;
     text-align: center;
     text-transform: uppercase;
-    color: rgb(187, 31, 3);
+    color: #7743DB;
+    font-weight: 800;
 }
 .info_contact_us >form{
     width: 100%;
@@ -32,36 +33,41 @@
 }
 
 .info_contact_us>form >input{
-    width: 80%;
+    width: 90%;
     height: 45px;
+    font-size: 1rem;
     border: none;
     outline: none;
     border: 1px solid gray;
     margin-bottom: 2%;
-    border-radius: 12px;
+    /* border-radius: 12px; */
+    border: 1px solid #7743DB;
     text-indent: 12px;
     margin-top: 1%;
 }
 .info_contact_us>form >textarea{
-    width: 80%;
-    border-radius: 12px;
+    width: 90%;font-size: 1rem;
+    border: 1px solid #7743DB;
     text-indent: 12px;
     margin-top: 1%;
     border: none;
-    outline: none;
-    border: 1px solid gray;
+    outline: none;border: 1px solid #7743DB;
 }
 .btn_contact{
-    width: 80%;
+    width: 90%;
     height: 45px;
-    border-radius: 12px;
+    /* border-radius: 12px; */
     border: none;
     outline: none;
-    background-color: #d3290f;
+    background-color: #7743DB;
     color: white;
     font-weight: 700;
     cursor: pointer;
+    /* -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px; */
 }
 .btn_contact:hover{
-    background-color: lightcoral;
+    background-color: #9066df;
 }

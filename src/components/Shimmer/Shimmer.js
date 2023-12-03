@@ -1,21 +1,19 @@
 import React from 'react'
 import "./Shimmer.css"
+import { ShimmerPostList } from "react-shimmer-effects";
 
 const Shimmer = () => {
     return (
         <>
-            <div className="shimmer">
+            {/* <div className="shimmer">
                 {
                     Array(15).fill("").map((x, i) =>
-                        <>
-                            <div className="wrapper-shimmer" key={i}>
-                                <div className="box"></div>
-                                <div className="child"></div>
-                            </div>
-                        </>
+                        <div key={i}> */}
+            <ShimmerPostList postStyle="STYLE_FIVE" col={5} row={2} gap={30} />;
+                        {/* </div>
                     )
                 }
-            </div>
+            </div> */}
         </>
     )
 }

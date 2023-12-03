@@ -4,12 +4,12 @@
     border-radius: 5px;
     margin: 20px;
     padding: 10px;
-    box-shadow: -1px 5px 10px 5px rgba(112, 112, 112, .2);
+    box-shadow: -1px 5px 10px 5px rgba(208, 168, 248, 0.2);
 }
 
 #card:hover {
     transform: scale(1.02);
-    box-shadow: -1px 4px 20px 14px rgba(56, 54, 54, 0.2);
+    box-shadow: -1px 4px 20px 14px rgba(197, 149, 244, 0.2);
 }
 
 #card>h2 {

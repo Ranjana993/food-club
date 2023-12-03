@@ -1,9 +1,9 @@
 import React from 'react'
 import "./WorkingPage.css"
-const step1  = "../../../img/step1.png"
-const step2  = "../../../img/step2.png"
-const step3 = "../../../img/step3.png"
-const step4 = "../../../img/step3.png"
+const step1  = "../../../img/step1.gif"
+const step2  = "../../../img/choose.gif"
+const step3 = "../../../img/payment.gif"
+const step4 = "../../../img/enjoy.gif"
 
 const WorkingPage = () => {
     return (

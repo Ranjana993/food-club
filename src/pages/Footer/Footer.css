@@ -1,4 +1,4 @@
-.footer_wrapper {
+/* .footer_wrapper {
     background-color: rgb(2, 2, 10);
     color: white;
 
@@ -22,4 +22,76 @@ ul>li {
 a {
     text-decoration: none;
     color: inherit;
+} */
+
+
+/* !  */
+/* Footer container */
+.footer_wrapper {
+    background-color: rgb(2, 2, 10);
+    color: white;
+    padding: 20px 0;
+}
+
+/* Footer content */
+.footer_data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 2%;
+    gap: 20px;
+    /* Adjust the gap between items */
+}
+
+.items_data {
+    text-align: center;
+    /* Center-align items */
+}
+
+.items_data>h3 {
+    margin-bottom: 1rem;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+ul>li {
+    list-style-type: none;
+    margin-bottom: 8px;
+    /* Adjust the spacing between list items */
+}
+
+/* Social media section */
+.social {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social h2 {
+    margin-bottom: 10px;
+}
+
+.icons {
+    font-size: 24px;
+}
+
+/* Media query for responsiveness */
+@media only screen and (max-width: 568px) {
+    .footer_data {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 2%;
+        gap: 12px;
+        /* Adjust the gap between items */
+    }
+}
+
+@media only screen and (max-width:510px) {
+    .footer_data {
+        flex-direction: column;
+        align-items: center;
+    }
 }

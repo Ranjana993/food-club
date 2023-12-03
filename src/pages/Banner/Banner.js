@@ -32,7 +32,8 @@ const Banner = () => {
     const getBannerData = async () => {
         const response = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=17.4854596&lng=78.4448738&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
         const json = await response.json();
-        setData(json.data.cards[1].card.card.imageGridCards.info)
+        console.log(json.data.cards[1]?.card);
+        // setData(json?.data?.cards[1]?.card?.card?.imageGridCards?.info)
     }
 
     useEffect(() => {

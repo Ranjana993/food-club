@@ -21,7 +21,9 @@ const Home = () => {
 
     const searchData = (searchText, restaurants) => {
         if (searchText !== "") {
+            console.log("SearchText: ", searchText , " \n resturents ",restaurants );
             const data = filterData(searchText, restaurants);
+            console.log(data);
             setFilteredRestaurants(data);
             setErrorMessage("");
             if (data.length === 0) {
@@ -41,10 +43,6 @@ const Home = () => {
         <>
             <div className="container-home">
                 <div className='wrapper-data'>
-                    <div className='crausel-item'>
-                        <Banner />
-                    </div>
-                    {/* Search Item */}
                     <div className="search_container">
                         <input
                             type="text"
@@ -55,11 +53,11 @@ const Home = () => {
                                 searchData(e.target.value, allRestaurants);
                             }}
                         />
-                        <button onClick={() => { searchData(searchText, allRestaurants) }}>Let's Go</button>
+                        <button onClick={() => { searchData(searchText, allRestaurants) }}>GO</button>
                     </div>
                     {/* Sub Title  */}
                     <div className="items">
-                        <h1>What's Your mood just click and You may <span style={{ color: 'red' }}>GO </span></h1>
+                        <h1>What's Your mood just click and You may <span style={{ color: '#571179' }}>GO </span></h1>
                     </div>
                     {/* Food Menu Items  */}
                     <div className="food_items">
@@ -68,9 +66,9 @@ const Home = () => {
                                 <div className="restaurant-list">
                                     {errorMessage}
                                     {
-                                        (filteredRestaurants === null ? filteredRes : filteredRestaurants).map((restaurant) => {
+                                        (filteredRestaurants === null ? filteredRes : filteredRestaurants).map((restaurant , i ) => {
                                             return (
-                                                <Link to={`/resturant/${restaurant?.info?.id}`} >
+                                                <Link to={`/resturant/${restaurant?.info?.id}`} key={i}>
                                                     <Menu  {...restaurant?.info} />
                                                 </Link>
                                             )

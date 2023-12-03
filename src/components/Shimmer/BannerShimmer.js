@@ -7,11 +7,11 @@ const BannerShimmer = () => {
             <div className="Banner_shimmer">
                 {
                     Array(15).fill("").map((x, i) =>
-                        <>
-                            <div className="banner_shimmer" key={i}>
+                        <div key={i}>
+                            <div className="banner_shimmer">
                                 <div className="imag"></div>
                             </div>
-                        </>
+                        </div>
                     )
                 }
             </div>

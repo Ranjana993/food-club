@@ -15,14 +15,14 @@ const useResData = (API_URL) => {
     async function getData() {
         try {
             const response = await fetch(API_URL);
-            console.log("response " ,  response) ///////////////////////////////
+            // console.log("response " ,  response) ///////////////////////////////
             if (!response.ok) {
                 const err = response.status;
                 throw new Error(err);
             }
             else {
                 const json = await response.json();
-                console.log(json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
+                // console.log(json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
 
                 setAllRestaurants(json?.data?.cards[2]?.card?.card?.gridElements.infoWithStyle.restaurants);
                 setFilteredRestaurants(json?.data?.cards[2]?.card?.card?.gridElements.infoWithStyle.restaurants);

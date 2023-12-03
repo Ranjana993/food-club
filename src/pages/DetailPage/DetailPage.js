@@ -24,9 +24,9 @@ const DetailPage = () => {
                         <p className="restaurant-tags">{restaurant?.cuisines?.join(", ")}</p>
                         <div className="restaurant-details">
                             <div className="restaurant-rating" style={
-                                (restaurant?.avgRating) < 4 ? { backgroundColor: "red" } : (restaurant?.avgRating) === "--" ? { backgroundColor: "white", color: "black" } : { backgroundColor: "green", color: "white", width: '40px', borderRadius: '2px', padding: '3px' }
+                                    (restaurant?.avgRating) < 4 ? { backgroundColor: "red", height: '30px' } : (restaurant?.avgRating) === "--" ? { backgroundColor: "white", color: "black" } : { backgroundColor: "green", color: "white", width: '40px', borderRadius: '2px' }
                             }>
-                                <i className="fa-solid fa-star"></i>
+                                {/* <i className="fa-solid fa-star"></i> */}
                                 <span>{restaurant?.avgRating}</span>
                             </div>
                             <div>{restaurant?.sla?.slaString}</div>
